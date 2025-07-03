@@ -1,6 +1,6 @@
 Diagnostikare Frontend Technical Challenge
 
-## This project is a technical solution for the frontend challenge using Next.js 14 (App Router), TypeScript, TailwindCSS, and ShadCN UI.
+## This project is a technical solution for the frontend challenge using Next.js 15 (App Router), TypeScript, TailwindCSS, and ShadCN UI.
 
 ### FEATURES
 - User list with avatar, full name and email.
