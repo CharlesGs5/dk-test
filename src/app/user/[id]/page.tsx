@@ -6,11 +6,11 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-interface Props {
+interface PageProps {
     params: { id: string };
 }
 
-const Page = async ({ params }: Props) => {
+const Page = async ({ params }: PageProps) => {
     const id = params?.id;
     try {
         const { data: user }: { data: User } = await getUserById(id);
