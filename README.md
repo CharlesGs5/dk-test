@@ -51,10 +51,13 @@ The following tests were implemented:
 
 ### AUTHOR
 
-Carlos Aldair Guevara
+* Carlos Aldair Guevara
 
-Email: carlosgs125@gmail.com
+Email: 
+* carlosgs125@gmail.com
 
 DEPLOYED VERSION
+
 You can view the live version here:
-https://dk-test.vercel.app
+
+* https://dk-test-git-main-charlesgs5s-projects.vercel.app/
