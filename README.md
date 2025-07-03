@@ -13,7 +13,7 @@ Diagnostikare Frontend Technical Challenge
 - Unit & integration tests with Jest and Testing Library.
 
 ### TECH STACK
-- Framework: Next.js 14 (App Router)
+- Framework: Next.js 15 (App Router)
 - Styling: TailwindCSS + ShadCN UI
 - HTTP Client: Axios
 - Testing: Jest, Testing Library
