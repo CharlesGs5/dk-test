@@ -101,6 +101,17 @@ It also simplifies the management of base URLs and interceptors for future scala
    Dockerfile and .dockerignore included.
 
    Enables isolated and reproducible builds with Docker CLI.
+   
+   To run Docker locally using docker: 
+```
+docker build -t my-next-app .
+docker run -p 3000:3000 my-next-app
+```
+
+This will:
+- Build the Docker image with the name my-next-app
+
+- Run the app on http://localhost:3000
 
 
 ### DEPLOYED VERSION
