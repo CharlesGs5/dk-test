@@ -2,11 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-};
-
-module.exports = {
+    output: 'standalone',
     images: {
         remotePatterns: [new URL('https://reqres.in/**')],
     },
-}
+};
+
 export default nextConfig;
