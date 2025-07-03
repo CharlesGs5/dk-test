@@ -56,7 +56,54 @@ The following tests were implemented:
 Email: 
 * carlosgs125@gmail.com
 
-DEPLOYED VERSION
+### Screenshots
+#### First Page (users?page=1)
+![screenshot](./public/screenshots/screenshot_1.png)
+#### First Page search
+![screenshot](./public/screenshots/screenshot_2.png)
+#### Details Page (user/[id])
+![screenshot](./public/screenshots/screenshot_3.png)
+#### Second Page (users?page=2)
+![screenshot](./public/screenshots/screenshot_4.png)
+
+
+## Technical Decisions
+### 1. Next.js + TypeScript
+   Next.js provides built-in routing and SSR support, ideal for production-ready applications.
+
+   TypeScript enhances type safety and helps reduce runtime errors.
+
+
+### 2. Tailwind CSS
+
+   Tailwind CSS was chosen due to its full compatibility with Shadcn UI components, allowing for consistent styling and rapid development without the need for custom CSS.
+
+
+### 3. Testing with Jest + React Testing Library
+
+   Focused on user interaction, ensuring components behave as expected.
+
+   Coverage includes:
+
+        Unit test: user list
+
+        Integration test: search + detail page navigation
+
+
+### 4. Axios over Fetch
+Axios was chosen instead of the native Fetch API due to its simpler syntax for handling requests and responses, 
+automatic JSON parsing, built-in support for request cancellation, and better error handling out of the box. 
+It also simplifies the management of base URLs and interceptors for future scalability.
+
+
+### 5. Docker Support (Bonus)
+
+   Dockerfile and .dockerignore included.
+
+   Enables isolated and reproducible builds with Docker CLI.
+
+
+### DEPLOYED VERSION
 
 You can view the live version here:
 
