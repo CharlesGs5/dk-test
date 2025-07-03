@@ -6,9 +6,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default async function Page({ params }: { params: { id: string } }) {
+export default function PageWrapper({ params }: { params: { id: string } }) {
+    return <UserDetails id={params.id} />;
+}
+
+async function UserDetails({ id }: { id: string }) {
     try {
-        const { data: user }: { data: User } = await getUserById(params.id);
+        const { data: user }: { data: User } = await getUserById(id);
 
         return (
             <div className="flex flex-col items-center justify-center min-h-screen px-4 space-y-6">
