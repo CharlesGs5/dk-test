@@ -1,13 +1,14 @@
-import { getUser } from "@/services/api";
-import UserList from "@/components/UserList/page";
+import {Suspense} from "react";
+import ClientHome from "@/components/ClientHome/ClientHome";
 
-const response = await getUser(1);
-const users = response.data;
 
 export default function Home() {
+
   return (
       <>
-          <UserList users={users}/>
+          <Suspense fallback={<p>Loading users...</p>}>
+              <ClientHome />
+          </Suspense>
       </>
   );
 }
