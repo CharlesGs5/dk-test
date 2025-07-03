@@ -7,7 +7,7 @@ import UserSearch from "@/components/UserSearch/UserSearch";
 import { User } from "@/types/user";
 import PaginationUser from "@/components/PaginationUser/PaginationUser";
 import { useSearchParams } from "next/navigation";
-import UserItemSkeleton from "@/components/UserItemSkeleton/UserItemSkeleton";
+import UserItemSkeleton from "@/components/shared/UserItemSkeleton/UserItemSkeleton";
 
 const ClientHome = () => {
     const searchParams = useSearchParams();

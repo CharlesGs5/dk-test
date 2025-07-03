@@ -10,8 +10,8 @@ interface UserItemProps {
 const UserItem = ({ user }: UserItemProps) => {
     return (
         <Link href={`/user/${user.id}`} className="block">
-            <Card className="p-6 flex flex-col items-center justify-center text-center gap-3 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 ease-in-out">
-                <h2 className="text-base font-semibold">{user.first_name} {user.last_name}</h2>
+            <Card className="min-h-[240px] w-full p-6 flex flex-col items-center justify-between text-center gap-3 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 ease-in-out">
+            <h2 className="text-base font-semibold">{user.first_name} {user.last_name}</h2>
                 <p className="text-sm text-gray-500">{user.email}</p>
                 <Image
                     src={user.avatar}

@@ -3,8 +3,7 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { getUserById } from "@/services/api";
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import BackButton from "@/components/shared/BackButton";
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
     try {
@@ -27,13 +26,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                     <p className="text-xs text-muted-foreground">ID: {user.id}</p>
                 </Card>
 
-                <Link
-                    href="/"
-                    className="text-sm text-blue-600 hover:underline flex items-center gap-1"
-                >
-                    <ArrowLeft size={16} />
-                    Back
-                </Link>
+                <BackButton />
             </div>
         );
     } catch (error) {
