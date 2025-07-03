@@ -11,9 +11,8 @@ interface PageProps {
 }
 
 const Page = async ({ params }: PageProps) => {
-    const id = params?.id;
     try {
-        const { data: user }: { data: User } = await getUserById(id);
+        const { data: user }: { data: User } = await getUserById(params.id);
 
         return (
             <div className="flex flex-col items-center justify-center min-h-screen px-4 space-y-6">
